@@ -13,20 +13,24 @@
 
 <body>
     <div id="app"></div>
-
+     <!-- The this keyword will not work with regular functions. This looses it's reference. We need to use fat arrow functions so that the this keyword binds to the component -->
     <script type="text/babel">
         class App extends React.Component {
             state = {
                 name: "Gene",
                 age: 44
             }
-            handleClick(e){
-                console.log(e.target);
+            // changed functions to arrow functions
+            handleClick = (e)=> {
+                this.setState({
+                name: "Paul",
+                age: 54
+            });
             }
-            handleMouseOver(e){
+            handleMouseOver = (e)=> {
                 console.log(e.target, e.pageX);
             }
-            handleCopy(e){
+            handleCopy = (e)=> {
                 console.log('Try being original!');
             }
 
