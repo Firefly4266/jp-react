@@ -2,12 +2,13 @@ import React, { Component } from 'react';
 
 class Customers extends Component{
     render(){
-        console.log(this.props);
+        //console.log(this.props);
+        const { name, age, ride } = this.props;
         return(
             <div className="customers">
-                <div>{ this.props.name }</div>
-                <div>{ this.props.age }</div>
-                <div>{ this.props.ride }</div>
+                <div>{ name }</div>
+                <div>{ age }</div>
+                <div>{ ride }</div>
             </div>
         )
     }

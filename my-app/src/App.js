@@ -9,6 +9,7 @@ class App extends Component {
           <h1>Reaction Time!</h1>
           <p> Welcome hommies...what's good!?? </p>
           <Customers name= 'Jp' age= '54' ride= 'Spider'/>
+          <Customers name= 'Dog' age= '50' ride= 'BMW'/>
       </div>
     );
   }
