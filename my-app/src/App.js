@@ -3,13 +3,19 @@ import Customers from "./Customers";
 
 // now we add props to the Customers component
 class App extends Component {
+  state = { 
+    customers : [
+      { name: 'Jp', age: 54, ride: 'Spider', id: 1 },
+      { name: 'Dog', age: 51, ride: 'Bmw', id: 2 },
+      { name: 'Tracey', age: 30, ride: 'Tesla', id: 3 }
+    ]
+  }
   render() {
     return (
       <div className="App">
           <h1>Reaction Time!</h1>
           <p> Welcome hommies...what's good!?? </p>
-          <Customers name= 'Jp' age= '54' ride= 'Spider'/>
-          <Customers name= 'Dog' age= '50' ride= 'BMW'/>
+          <Customers customers={this.state.customers} />
       </div>
     );
   }
