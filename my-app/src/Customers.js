@@ -4,17 +4,15 @@ class Customers extends Component{
     render(){
         const { customers } = this.props;
         const customerList = customers.map(customer =>{
-            if(customer.age > 30){
-            return(
+            return customer.age > 30 ? (
                 <div className="customers" key= { customer.id }>
                     <div>{ customer.name }</div>
                     <div>{ customer.age }</div>
                     <div>{ customer.ride }</div>
                 </div>
-            )
-            } else{
-                return null;
-            }
+
+            ) : null;
+        
         })
         return( 
             <div className='customerList'>
