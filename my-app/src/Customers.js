@@ -5,7 +5,7 @@ class Customers extends Component{
         const { customers } = this.props;
         const customerList = customers.map(customer =>{
             return(
-                <div className="customers">
+                <div className="customers" key= { customer.id }>
                     <div>{ customer.name }</div>
                     <div>{ customer.age }</div>
                     <div>{ customer.ride }</div>
