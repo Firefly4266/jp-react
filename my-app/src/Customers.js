@@ -11,7 +11,6 @@ class Customers extends Component{
                     <div>{ customer.ride }</div>
                 </div>
             );
-        
         })
         return( 
             <div className='customerList'>

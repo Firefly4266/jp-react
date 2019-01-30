@@ -11,13 +11,18 @@ class App extends Component {
       { name: 'Tracey', age: 30, ride: 'Tesla', id: 3 }
     ]
   }
+
+  addCustomer = (customer)=>{
+    console.log(customer);
+  }
+
   render() {
     return (
       <div className="App">
           <h1>Reaction Time!</h1>
           <p> Welcome hommies...what's good!?? </p>
           <Customers customers={this.state.customers} />
-          <AddCustomer />
+          <AddCustomer addCustomer= {this.addCustomer} />
       </div>
     );
   }

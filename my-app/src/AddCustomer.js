@@ -15,7 +15,7 @@ class AddCustomer extends Component{
 
      handleSubmit = (e)=>{
         e.preventDefault();
-        console.log(this.state);
+        this.props.addCustomer(this.state)
     }
     
     render(){
