@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Customers from "./Customers";
+import AddCustomer from "./AddCustomer";
 
 // now we add props to the Customers component
 class App extends Component {
@@ -16,6 +17,7 @@ class App extends Component {
           <h1>Reaction Time!</h1>
           <p> Welcome hommies...what's good!?? </p>
           <Customers customers={this.state.customers} />
+          <AddCustomer />
       </div>
     );
   }
