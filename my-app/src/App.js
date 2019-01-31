@@ -23,7 +23,14 @@ class App extends Component {
   }
 
   deleteCustomer = (id)=>{
-    console.log(id);
+    let customers = this.state.customers.filter((customer)=>{
+      return customer.id !== id
+    })
+    this.setState(
+      {
+        customers: customers
+      }
+    )
   }
 
   render() {
