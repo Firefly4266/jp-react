@@ -7,11 +7,11 @@ import {NavLink, Link, withRouter } from 'react-router-dom'; // #1
   method attached to it. use the push to "push" (redirect) us to a different page */
 
 const Navbar = (props)=>{ // #2 
-    setTimeout(()=>{
-        props.history.push('/')
-    }, 5000);
+    // setTimeout(()=>{
+    //     props.history.push('/')
+    // }, 5000);
     return(
-        <nav className="nav-wrapper red darken-3">
+        <nav className="nav-wrapper green darken-3">
             <div className="container">
                 <a href='' className="brand-logo">Spa Application</a>
                 <ul className='right'>

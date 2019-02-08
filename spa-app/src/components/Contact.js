@@ -1,4 +1,5 @@
 import React from 'react';
+import RandColor from '../hoc/randomColor';
 
 const Contact = ()=>{
     return(
@@ -9,4 +10,4 @@ const Contact = ()=>{
     )
 }
 
-export default Contact
+export default RandColor(Contact);
