@@ -1,6 +1,5 @@
 import React from 'react';
-/* #1 the <NavLink> and <Link> tags are part of the react-router-dom. use them 
- instead of the <a> tag and they act like preventDefault() does in a form. */
+
 import {NavLink, Link, withRouter } from 'react-router-dom'; // #1
 
 /* #2 pass the props to the navbar. the props have the history object with the push 
@@ -13,7 +12,7 @@ const Navbar = (props)=>{ // #2
     return(
         <nav className="nav-wrapper green darken-3">
             <div className="container">
-                <a href='' className="brand-logo">Spa Application</a>
+                <a className="brand-logo">Spa Application</a>
                 <ul className='right'>
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/about">About</NavLink></li>
