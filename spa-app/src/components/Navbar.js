@@ -1,6 +1,6 @@
 import React from 'react';
 
-import {NavLink, Link, withRouter } from 'react-router-dom'; // #1
+import {NavLink, withRouter } from 'react-router-dom'; // #1
 
 /* #2 pass the props to the navbar. the props have the history object with the push 
   method attached to it. use the push to "push" (redirect) us to a different page */
@@ -12,7 +12,7 @@ const Navbar = (props)=>{ // #2
     return(
         <nav className="nav-wrapper green darken-3">
             <div className="container">
-                <a className="brand-logo">Spa Application</a>
+                <a href="" className="brand-logo">Spa Application</a>
                 <ul className='right'>
                     <li><NavLink to="/">Home</NavLink></li>
                     <li><NavLink to="/about">About</NavLink></li>
