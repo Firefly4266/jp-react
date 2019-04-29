@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import {Link} from 'react-router-dom';
+import studying from '../studying.jpg';
 
 import axios from 'axios';
 
@@ -23,6 +24,7 @@ class Home extends Component {
             posts.map(post=>{
                 return(
                     <div className='post card' key={post.id}>
+                        <img src={studying} alt="Studying image"/>
                         <div className="card-content">
                         <Link to={'/' + post.id}>
                             <span className='card-title'>{post.title}</span>
@@ -37,7 +39,7 @@ class Home extends Component {
         )
  
         return(
-            <div className="container">
+            <div className="container home">
                 <h4 className="center">Home</h4>
                 {postList}
             </div> 
