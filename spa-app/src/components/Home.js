@@ -18,7 +18,6 @@ class Home extends Component {
         })
     }
     render() {
-
         const {posts} = this.state;
         const postList = posts.length ? (
             posts.map(post=>{
@@ -37,7 +36,6 @@ class Home extends Component {
         ) : (
             <div className="center">No posts yet</div>
         )
- 
         return(
             <div className="container home">
                 <h4 className="center">Home</h4>
